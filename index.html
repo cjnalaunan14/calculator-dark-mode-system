@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="calculator">
+        <div class="frame">
+            <div class="display-info">
+                <div class="label">
+                    <h1>LexDev</h1>
+                </div>
+                <div class="label-theme">
+                    <h1 class="theme">THEME</h1>
+                    <button onclick="clicked()" id="button"><i class='bx bxs-sun' id="toggle"></i></button>
+                </div>
+            </div>
+            <input id="display" class="display" readonly>
+            <div id="keys">
+                <button onclick="Display('7')" id="btn">7</button>
+                <button onclick="Display('8')" id="btn">8</button>
+                <button onclick="Display('9')"id="btn">9</button>
+                <button onclick="Delete()" class="delete" id="btn">DEL</button>
+                <button onclick="Display('4')" id="btn">4</button>
+                <button onclick="Display('5')" id="btn">5</button>
+                <button onclick="Display('6')" id="btn">6</button>
+                <button onclick="Display('+')" id="btn">+</button>
+                <button onclick="Display('1')" id="btn">1</button>
+                <button onclick="Display('2')" id="btn">2</button>
+                <button onclick="Display('3')" id="btn">3</button>
+                <button onclick="Display('-')" id="btn">-</button>
+                <button onclick="Display('.')" id="btn">.</button>
+                <button onclick="Display('0')" id="btn">0</button>
+                <button onclick="Display('/')" id="btn">/</button>
+                <button onclick="Display('*')" id="btn">*</button>
+                <button onclick="Reset()" class="delete" id="btn">RESET</button>
+                <button onclick="Evaluate()" class="equal" id="btn">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
